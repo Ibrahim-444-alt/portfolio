@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Ibrahim Khalid — Full Stack Software Engineer</title>
+<meta name="description" content="Muhammad Ibrahim Khalid — Full Stack Software Engineer specializing in ASP.NET MVC, C#, PHP, SQL Server and modern web technologies. Explore projects, skills and experience.">
+<meta name="keywords" content="Full Stack Developer, ASP.NET MVC Developer, PHP Developer, Software Engineer, Muhammad Ibrahim Khalid">
+<meta name="author" content="Muhammad Ibrahim Khalid">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Muhammad Ibrahim Khalid — Full Stack Software Engineer">
+<meta property="og:description" content="Building clean, high-performance, user-focused software solutions.">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%237C3AED%22>&#60;/&#62;</text></svg>">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-logo">MIK<span class="cursor-blink">_</span></div>
+    <div class="loader-terminal">
+      <p class="loader-line" data-text="booting environment..."></p>
+      <p class="loader-line" data-text="resolving dependencies: asp.net · php · sql"></p>
+      <p class="loader-line" data-text="compiling portfolio.exe"></p>
+    </div>
+    <div class="loader-bar"><span></span></div>
+    <div class="loader-percent">0%</div>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress"><span id="scrollProgressBar"></span></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header" id="siteHeader">
+  <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
+    <div class="container nav-container">
+      <a class="brand" href="#hero" aria-label="Home">
+        <span class="brand-mark">&lt;MIK/&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link"><span class="nl-index">01</span>About</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nl-index">02</span>Skills</a></li>
+          <li><a href="#services" class="nav-link"><span class="nl-index">03</span>Services</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nl-index">04</span>Projects</a></li>
+          <li><a href="#education" class="nav-link"><span class="nl-index">05</span>Education</a></li>
+          <li><a href="#certificates" class="nav-link"><span class="nl-index">06</span>Certificates</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nl-index">07</span>Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="#contact" class="btn btn-nav-cta">Let's talk</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div id="particles-js" class="particles-layer" aria-hidden="true"></div>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="900">
+        <p class="hero-eyebrow"><span class="dot-status"></span> Available for opportunities</p>
+        <h1 class="hero-name">Muhammad Ibrahim<br><span class="text-gradient">Khalid</span></h1>
+        <h2 class="hero-role">
+          <span class="role-prefix">$</span> <span id="typed-role"></span><span class="typed-cursor">|</span>
+        </h2>
+        <p class="hero-summary">
+          Full Stack Software Engineer crafting clean, high-performance, user-focused
+          software — from ASP.NET MVC systems to modern responsive interfaces.
+          Currently studying Computer Science at Hamdard University.
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/resume/Muhammad-Ibrahim-Khalid-Resume.pdf" class="btn btn-primary-glow" download>
+            <i class="fa-solid fa-arrow-down"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline-ghost">View Projects</a>
+          <a href="#contact" class="btn btn-outline-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/Ibrahim-444-alt" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/ibrahim-khalid-14a624421" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:Ibrahimkhalid4111@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+        <div class="hero-avatar-ring">
+          <div class="avatar-orbit orbit-1"></div>
+          <div class="avatar-orbit orbit-2"></div>
+          <div class="avatar-frame" data-tilt data-tilt-max="8" data-tilt-glare data-tilt-max-glare="0.2">
+            <img src="assets/img/profile.jpg" alt="Muhammad Ibrahim Khalid" class="avatar-photo" loading="eager">
+          </div>
+        </div>
+
+        <div class="terminal-window" data-tilt data-tilt-max="6">
+          <div class="terminal-titlebar">
+            <span class="tdot td-red"></span><span class="tdot td-yellow"></span><span class="tdot td-green"></span>
+            <span class="terminal-title">status.sh</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <p><span class="t-comment">// stack loaded</span></p>
+            <p><span class="t-key">const</span> <span class="t-var">engineer</span> = {</p>
+            <p>&nbsp;&nbsp;name: <span class="t-str">"Ibrahim Khalid"</span>,</p>
+            <p>&nbsp;&nbsp;stack: [<span class="t-str">"ASP.NET"</span>, <span class="t-str">"C#"</span>, <span class="t-str">"PHP"</span>],</p>
+            <p>&nbsp;&nbsp;status: <span class="t-str">"building..."</span></p>
+            <p>};</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span>Scroll</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">01 · Who I Am</p>
+        <h2>About <span class="text-gradient">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo" data-aos="fade-right">
+          <div class="about-photo-frame">
+            <img src="assets/img/profile.jpg" alt="Muhammad Ibrahim Khalid" loading="lazy">
+          </div>
+          <div class="about-photo-badge">
+            <i class="fa-solid fa-code"></i>
+            <span>Full Stack<br>Engineer</span>
+          </div>
+        </div>
+
+        <div class="about-text" data-aos="fade-up">
+          <p class="lead-para">
+            I am a passionate Full Stack Software Engineer currently pursuing a
+            <strong> BS in Computer Science at Hamdard University</strong>, while completing a
+            <strong> Diploma in Software Engineering at Aptech</strong>.
+          </p>
+          <p>
+            I'm a detail-oriented Software Engineering student with hands-on proficiency across
+            front-end web development, PHP web applications, and backend ASP.NET Core MVC
+            architectures. I build responsive interfaces with JavaScript (ES6), Bootstrap and
+            HTML/CSS, seamlessly integrated with backend systems using PHP, C#, ASP.NET Core MVC
+            and MS SQL Server — bringing strong problem-solving skills and modern web standards
+            to every project.
+          </p>
+
+          <ul class="about-traits">
+            <li><i class="fa-solid fa-code"></i> Passion for Web Development</li>
+            <li><i class="fa-solid fa-diagram-project"></i> Structured Problem Solving</li>
+            <li><i class="fa-solid fa-wand-magic-sparkles"></i> Clean, Maintainable Code</li>
+            <li><i class="fa-solid fa-layer-group"></i> Modern UI/UX Sensibility</li>
+            <li><i class="fa-solid fa-arrow-trend-up"></i> Continuous Learning</li>
+          </ul>
+        </div>
+
+        <div class="about-stats" data-aos="fade-left">
+          <div class="stat-card" data-target="4">
+            <span class="stat-number">0</span><span class="stat-plus">+</span>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card" data-target="10">
+            <span class="stat-number">0</span><span class="stat-plus">+</span>
+            <p>Technologies Used</p>
+          </div>
+          <div class="stat-card" data-target="2">
+            <span class="stat-number">0</span><span class="stat-plus">+</span>
+            <p>Years of Learning</p>
+          </div>
+          <div class="stat-card" data-target="8">
+            <span class="stat-number">0</span><span class="stat-plus">+</span>
+            <p>Responsive Builds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">02 · Toolbox</p>
+        <h2>Skills &amp; <span class="text-gradient">Technologies</span></h2>
+      </div>
+
+      <div class="skills-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="skill-tab active" data-filter="all">All</button>
+        <button class="skill-tab" data-filter="language">Languages</button>
+        <button class="skill-tab" data-filter="frontend">Frontend</button>
+        <button class="skill-tab" data-filter="backend">Backend</button>
+        <button class="skill-tab" data-filter="database">Databases</button>
+        <button class="skill-tab" data-filter="tools">Tools &amp; CMS</button>
+      </div>
+
+      <div class="skills-carousel">
+        <div class="skills-grid" id="skillsGrid">
+        <!-- Languages -->
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="language" data-aos="zoom-in">
+          <i class="fa-brands fa-php skill-icon"></i><h3>PHP</h3><span class="skill-tag">Language</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="language" data-aos="zoom-in" data-aos-delay="50">
+          <i class="fa-solid fa-hashtag skill-icon"></i><h3>C#</h3><span class="skill-tag">Language</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="language frontend" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fa-brands fa-js skill-icon"></i><h3>JavaScript (ES6)</h3><span class="skill-tag">Language</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="language database" data-aos="zoom-in" data-aos-delay="150">
+          <i class="fa-solid fa-terminal skill-icon"></i><h3>SQL</h3><span class="skill-tag">Language</span>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="frontend" data-aos="zoom-in">
+          <i class="fa-brands fa-html5 skill-icon"></i><h3>HTML5</h3><span class="skill-tag">Frontend</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="frontend" data-aos="zoom-in" data-aos-delay="50">
+          <i class="fa-brands fa-css3-alt skill-icon"></i><h3>CSS3</h3><span class="skill-tag">Frontend</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="frontend" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fa-solid fa-dollar-sign skill-icon"></i><h3>jQuery</h3><span class="skill-tag">Frontend</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="frontend" data-aos="zoom-in" data-aos-delay="150">
+          <i class="fa-brands fa-bootstrap skill-icon"></i><h3>Bootstrap 5</h3><span class="skill-tag">Frontend</span>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="backend" data-aos="zoom-in">
+          <i class="fa-solid fa-diagram-project skill-icon"></i><h3>ASP.NET Core MVC</h3><span class="skill-tag">Backend</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="backend language" data-aos="zoom-in" data-aos-delay="50">
+          <i class="fa-brands fa-php skill-icon"></i><h3>PHP APIs</h3><span class="skill-tag">Backend</span>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="database" data-aos="zoom-in">
+          <i class="fa-solid fa-database skill-icon"></i><h3>SQL Server</h3><span class="skill-tag">Database</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="database" data-aos="zoom-in" data-aos-delay="50">
+          <i class="fa-solid fa-database skill-icon"></i><h3>MySQL</h3><span class="skill-tag">Database</span>
+        </div>
+
+        <!-- Tools & CMS -->
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="tools" data-aos="zoom-in">
+          <i class="fa-brands fa-git-alt skill-icon"></i><h3>Git</h3><span class="skill-tag">Tools</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="tools" data-aos="zoom-in" data-aos-delay="50">
+          <i class="fa-brands fa-github skill-icon"></i><h3>GitHub</h3><span class="skill-tag">Tools</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="tools" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fa-solid fa-code skill-icon"></i><h3>Visual Studio</h3><span class="skill-tag">Tools</span>
+        </div>
+        <div class="skill-card" data-tilt data-tilt-max="10" data-category="tools" data-aos="zoom-in" data-aos-delay="150">
+          <i class="fa-brands fa-wordpress skill-icon"></i><h3>WordPress</h3><span class="skill-tag">CMS</span>
+        </div>
+        </div>
+
+        <button class="skills-arrow skills-prev" id="skillsPrev" type="button" aria-label="Scroll skills left">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="skills-arrow skills-next" id="skillsNext" type="button" aria-label="Scroll skills right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">03 · What I Offer</p>
+        <h2>Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Full Stack Web Development</h3>
+          <p>End-to-end applications — from database schema to polished, responsive interfaces — built to scale.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>Website Design</h3>
+          <p>Clean, modern interfaces that balance visual polish with usability and fast load times.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>ASP.NET MVC Development</h3>
+          <p>Robust, maintainable enterprise-grade applications built on the .NET ecosystem.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon"><i class="fa-brands fa-php"></i></div>
+          <h3>PHP Development</h3>
+          <p>Dynamic, database-driven websites and systems powered by PHP and MySQL.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Database Design</h3>
+          <p>Well-structured, normalized schemas for SQL Server, MySQL, and MongoDB that scale cleanly.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Responsive Website Development</h3>
+          <p>Interfaces engineered mobile-first, tested across breakpoints and devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">04 · Selected Work</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="proj-filter active" data-filter="all">All</button>
+        <button class="proj-filter" data-filter="dotnet">ASP.NET</button>
+        <button class="proj-filter" data-filter="php">PHP</button>
+        <button class="proj-filter" data-filter="frontend">Frontend</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card" data-category="php" data-aos="fade-up">
+          <div class="project-media">
+            <img src="assets/img/projects/immunitrack.jpg" alt="ImmuniTrack vaccination management system homepage" class="project-screenshot" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://github.com/Ibrahim-444-alt/IMMUNITRACK" target="_blank" rel="noopener" class="proj-btn" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://immunitrack.infy.click" target="_blank" rel="noopener" class="proj-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>ImmuniTrack — Vaccination Management System</h3>
+            <p>A live PHP web application that streamlines vaccination tracking, appointment scheduling, and patient record management.</p>
+            <div class="project-stack">
+              <span>PHP</span><span>MySQL</span><span>Live Demo</span>
+            </div>
+            <a href="https://immunitrack.infy.click" target="_blank" rel="noopener" class="card-arrow">
+              View Live <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="dotnet" data-aos="fade-up" data-aos-delay="80">
+          <div class="project-media project-media-carousel" data-carousel>
+            <div class="carousel-track">
+              <img src="assets/img/projects/ngo-mgmt-1.png" alt="NGO Management System — doctor portal dashboard" loading="lazy">
+              <img src="assets/img/projects/ngo-mgmt-2.png" alt="NGO Management System — admin dashboard" loading="lazy">
+            </div>
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+            <div class="project-overlay">
+              <a href="https://github.com/Ibrahim-444-alt/NGO-Web-App" target="_blank" rel="noopener" class="proj-btn" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>NGO Management System</h3>
+            <p>A full-stack administrative web application to securely manage organizational records and standardize operational data.</p>
+            <div class="project-stack">
+              <span>ASP.NET Core</span><span>C#</span><span>SQL Server</span>
+            </div>
+            <a href="https://github.com/Ibrahim-444-alt/NGO-Web-App" target="_blank" rel="noopener" class="card-arrow">
+              View Code <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="dotnet" data-aos="fade-up" data-aos-delay="160">
+          <div class="project-media project-media-carousel" data-carousel>
+            <span class="progress-badge"><i class="fa-solid fa-hammer"></i> 40% Complete</span>
+            <div class="carousel-track">
+              <img src="assets/img/projects/hospital-mgmt-1.jpg" alt="Hospital Management System — doctor portal dashboard" loading="lazy">
+              <img src="assets/img/projects/hospital-mgmt-2.jpg" alt="Hospital Management System — admin dashboard" loading="lazy">
+              <img src="assets/img/projects/hospital-mgmt-3.jpg" alt="Hospital Management System — public website" loading="lazy">
+            </div>
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+            <div class="project-overlay">
+             </div>
+          </div>
+          <div class="project-info">
+            <h3>Hospital Management System</h3>
+            <p>An automated clinic workspace covering patient records, doctor &amp; admin dashboards, and appointment workflows. Currently a work in progress, roughly 40% complete.</p>
+            <div class="project-stack">
+              <span>ASP.NET Core</span><span>C#</span><span>SQL Server</span>
+            </div>
+            
+          </div>
+        </article>
+
+        <article class="project-card" data-category="frontend" data-aos="fade-up">
+          <div class="project-media">
+            <img src="assets/img/projects/liberty-electronics.jpg" alt="Liberty Electronics website homepage" class="project-screenshot" loading="lazy">
+            <div class="project-overlay">
+              <a href="https://github.com/Ibrahim-444-alt/Liberty_Electronics" target="_blank" rel="noopener" class="proj-btn" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://liberty-electronics-livid.vercel.app" target="_blank" rel="noopener" class="proj-btn" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Liberty Electronics</h3>
+            <p>A cross-device responsive storefront for an electronics retailer, built for fluid interactive user pathways and performance-optimized layouts.</p>
+            <div class="project-stack">
+              <span>HTML5</span><span>CSS3</span><span>JS (ES6)</span><span>Bootstrap</span>
+            </div>
+            <a href="https://liberty-electronics-livid.vercel.app" target="_blank" rel="noopener" class="card-arrow">
+              View Live <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">05 · Academic Path</p>
+        <h2>Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-badge">2025 – Present · 3rd Semester</span>
+            <h3>BS in Computer Science</h3>
+            <p class="timeline-org">Hamdard University</p>
+            <p>Building a strong foundation in algorithms, data structures, software engineering and systems design.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-badge">2024 – Present · 4th Semester</span>
+            <h3>Diploma in Software Engineering</h3>
+            <p class="timeline-org">Aptech Learning</p>
+            <p>Hands-on training in full stack development, database design, and software delivery practices.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-badge">2023 – 2024</span>
+            <h3>Intermediate (Pre-Engineering)</h3>
+            <p class="timeline-org">Government Degree Boys College, Gulistan-e-Johar</p>
+            <p>Completed pre-engineering studies with a focus on mathematics and physical sciences.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-badge">Graduated 2022</span>
+            <h3>Matriculation</h3>
+            <p class="timeline-org">Nasra School</p>
+            <p>Completed secondary education, laying the academic groundwork for further studies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section id="certificates" class="section certificates-section">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">06 · Credentials</p>
+        <h2>Certificates</h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card glass" data-aos="fade-up">
+          <a href="assets/certificates/aptech-accp-ai-term1.jpg" target="_blank" rel="noopener" class="cert-thumb">
+            <img src="assets/certificates/aptech-accp-ai-term1.jpg" alt="Aptech ACCP in AI Term 1 Performance Statement" loading="lazy">
+            <span class="cert-thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </a>
+          <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>ACCP in AI — Term 1</h3>
+          <p>Aptech Computer Education · Grade: Credit (69.0/100)</p>
+          <a href="assets/certificates/aptech-accp-ai-term1.jpg" target="_blank" rel="noopener" class="card-arrow">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="cert-card glass" data-aos="fade-up" data-aos-delay="100">
+          <a href="assets/certificates/aptech-accp-ai-term2.jpg" target="_blank" rel="noopener" class="cert-thumb">
+            <img src="assets/certificates/aptech-accp-ai-term2.jpg" alt="Aptech ACCP in AI Term 2 Performance Statement" loading="lazy">
+            <span class="cert-thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </a>
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>ACCP in AI — Term 2</h3>
+          <p>Aptech Computer Education · Grade: Credit (71.0/100)</p>
+          <a href="assets/certificates/aptech-accp-ai-term2.jpg" target="_blank" rel="noopener" class="card-arrow">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="cert-card glass cert-placeholder" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-icon"><i class="fa-solid fa-plus"></i></div>
+          <h3>More to come</h3>
+          <p>New certifications are added as they are earned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESUME ============ -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="resume-panel" data-aos="zoom-in">
+        <div class="resume-text">
+          <p class="eyebrow">07 · Full Overview</p>
+          <h2>Get the complete picture</h2>
+          <p>Download a full copy of my resume for a detailed look at my experience, education, and technical skills.</p>
+          <a href="assets/resume/Muhammad-Ibrahim-Khalid-Resume.pdf" class="btn btn-primary-glow" download>
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
+        <div class="resume-preview">
+          <div class="resume-page">
+            <div class="resume-line w-60"></div>
+            <div class="resume-line w-40"></div>
+            <div class="resume-block"></div>
+            <div class="resume-line w-80"></div>
+            <div class="resume-line w-70"></div>
+            <div class="resume-line w-50"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">08 · Get In Touch</p>
+        <h2>Let's build something great</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <a href="mailto:Ibrahimkhalid4111@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span><p>Ibrahimkhalid4111@gmail.com</p></div>
+          </a>
+          
+          <a href="https://github.com/Ibrahim-444-alt" target="_blank" rel="noopener" class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <div><span>GitHub</span><p>github.com/Ibrahim-444-alt</p></div>
+          </a>
+          <a href="https://linkedin.com/in/ibrahim-khalid-14a624421" target="_blank" rel="noopener" class="contact-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div><span>LinkedIn</span><p>linkedin.com/in/ibrahim-khalid-14a624421</p></div>
+          </a>
+        </div>
+
+        <form id="contactForm" class="contact-form" data-aos="fade-left">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary-glow full-width" id="submitBtn">
+            <span class="btn-label">Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-brand">
+      <span class="brand-mark">&lt;MIK/&gt;</span>
+      <p>Full Stack Software Engineer</p>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="footer-socials">
+      <a href="https://github.com/Ibrahim-444-alt" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/ibrahim-khalid-14a624421" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:Ibrahimkhalid4111@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Muhammad Ibrahim Khalid. All rights reserved.</p>
+    <p>Designed &amp; Developed by Muhammad Ibrahim Khalid</p>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
